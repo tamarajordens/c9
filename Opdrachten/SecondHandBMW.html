@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>jQuery Mobile page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/themes/aquaman.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.structure-1.4.5.min.css" /> 
+  <script src="src/jquery-1.11.1.min.js"></script> 
+  <script src="src/jquery.mobile-1.4.5.min.js"></script> 
+  
+
+</head>
+
+<div datarole = "header" >
+  <h1>Second Hand BMW</h1>
+  <form>
+  <div class="ui-field-contain">
+    <label for="name">Naam:</label>
+    <input type="text" name="name" id="name">
+  </div>
+
+<br>
+
+    <fieldset class="ui-field-contain">
+    <label for="model">Welk Model</label>
+    <select name="model" id="model">
+      <option value="1">Model 1</option>
+      <option value="2">Model 2</option>
+      <option value="3">Model 3</option>
+    </select>
+  </fieldset>
+
+  <br>
+  
+  <fieldset data-role = "controlgroup">
+    <legend>Kies carrosserie: </legend>
+    <input type = "radio" name = "carrosserie" id = "carrosserieA" value = "1" checked = "checked">
+    <label for = "carrosserieA"> A</label>
+    
+    <input type = "radio" name = "carrosserie" id = "carrosserieB" value = "2">
+    <label for = "carrosserieB"> B</label>
+    
+    <input type = "radio" name = "carrosserie" id = "carrosserieC" value = "3">
+    <label for = "carrosserieC"> C</label>
+  </fieldset>
+  
+
+<br>
+
+  <fieldset data-role = "controlgroup">
+    <legend>type brandstof: </legend>
+    <input type = "radio" name = "brandstof" id = "1" value = "1" checked = "checked">
+    <label for = "1"> 1</label>
+    
+    <input type = "radio" name = "brandstof" id = "2" value = "2">
+    <label for = "2"> 2</label>
+    
+    <input type = "radio" name = "brandstof" id = "3" value = "3">
+    <label for = "3"> 3</label>
+  </fieldset>
+
+<br>
+
+
+    <fieldset class="ui-field-contain">
+    <label for="bouwjaar">Wanneer is de auto gemaakt?</label>
+    <select name="bouwjaar" id="bouwjaar">
+      <option value="0">2011</option>
+      <option value="1">2012</option>
+      <option value="2">2013</option>
+      <option value="3">2014</option>
+      <option value="4">2015</option>
+    </select>
+  </fieldset>
+
+<br>
+
+
+  <fieldset data-role = "controlgroup">
+    <legend>Kleur auto: </legend>
+    <input type = "radio" name = "kleur" id = "roze" value = "roze" checked = "checked">
+    <label for = "roze"> Roze</label>
+    
+    <input type = "radio" name = "kleur" id = "geel" value = "geel">
+    <label for = "geel"> Geel</label>
+    
+    <input type = "radio" name = "kleur" id = "paars" value = "paars">
+    <label for = "paars"> Paars</label>
+  </fieldset>
+
+
+
+<div data-role="main" class="ui-content">
+      <label for="kilometers">Kilometers op teller (afronden naar boven)</label>
+      <input type="range" name="kilometers" id="kilometers" value="0" min="0" max="100000">
+    
+  </div>
+  
+  <br>
+  
+  
+  <fieldset class="ui-field-contain">
+    <label for="Opties">Selecteer de opties:</label>
+    <select name="opties" id="opties" multiple data-native-menu = "false">
+      <option value="LM-velgen">LM-velgen</option>
+      <option value="navigatie">naviagatie</option>
+      <option value="stoelverwarming">stoelverwarming</option>
+      <option value="metallic lak">Metallic lak</option>
+    </select>
+  </fieldset>
+
+<br>
+  
+  <div class="ui-field-contain">
+    <label for="prijs">Prijs in euro's (vul een getal in)</label>
+    <input type="text" name="prijs" id="prijs">
+  </div>
+</form>
+  
+  
+  
+</div>
+
+</html>
